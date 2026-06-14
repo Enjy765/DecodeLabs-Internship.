@@ -1,0 +1,20 @@
+expenses = []
+
+print("Expense Tracker")
+print("Enter expenses one by one.")
+print("Type 0 to finish.\n")
+
+while True:
+    expense = float(input("Enter expense: "))
+
+    if expense == 0:
+        break
+
+    expenses.append(expense)
+
+total = sum(expenses)
+
+print("\n----- Summary -----")
+print("Number of Expenses:", len(expenses))
+print("Expenses:", expenses)
+print("Total Spent:", total)
